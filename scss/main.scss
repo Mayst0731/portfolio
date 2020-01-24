@@ -98,6 +98,7 @@ main {
     background-size: cover;
     background-position: center;
   }
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
@@ -123,6 +124,41 @@ main {
 }
 
 // Work/Projects
+// My modification
+.work_pro1 {
+  background: url(../img/pro1.jpg);
+  @include workPro;
+}
+.work_pro2 {
+  background: url(../img/pro2.jpg);
+  @include workPro;
+}
+.work_pro3 {
+  background: url(../img/pro3.jpg);
+  @include workPro;
+}
+.work_pro4 {
+  background: url(../img/pro4.jpg);
+  @include workPro;
+}
+.work_pro5 {
+  background: url(../img/pro5.jpg);
+  @include workPro;
+}
+.work_pro6 {
+  background: url(../img/pro6.jpg);
+  @include workPro;
+}
+.work_pro7 {
+  background: url(../img/pro7.jpg);
+  @include workPro;
+}
+.work_pro8 {
+  background: url(../img/pro8.jpg);
+  @include workPro;
+}
+
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -197,5 +233,6 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
+
 
 @import "mobile";
