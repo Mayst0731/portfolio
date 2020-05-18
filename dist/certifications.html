@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.css"
+      integrity="sha256-PtBWX+v2TI0iuYI3rZrQft5kfd3ZkdPd8iVMZoE1rxE="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link">
+              HOME
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              ABOUT ME
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">
+              MY WORK
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="certifications.html" class="nav-link">
+              MY CERTIFICATIONS
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              HOW TO REACH ME
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="certifications">
+      <h1 class="lg-heading">My <span class="text-secondary">Certifications</span></h1>
+
+      <h2 class="sm-heading">
+       Motivating achievements on my learning path⭐⭐⭐⭐⭐
+      </h2> 
+
+      <div class="accordion">
+        <ul>
+            <li>
+                <img src="./img/cer1_copy.jpg" alt="transformers4_640x320" border="0">
+            </li>
+            <li>
+                <img src="./img/cer2_copy.jpg" alt="Blade_Runner2049_640x320" border="0">
+            </li>
+            <li>
+                <img src="./img/cer3_copy.jpg" alt="GOG2_640x320" border="0">
+            </li>
+        </ul>
+    </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2020
+    </footer>
+
+    <script src="js/main.js"></script>
+    <style>
+* {
+    margin: 0; 
+    padding: 0;
+    }
+
+main {
+    background-image: #444;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: white; 
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordion {
+    width: 1005px; height: 541px;
+    overflow: hidden;
+    margin: 100px auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+.accordion ul {
+    width: 1005px;
+}
+
+.accordion li {
+    position: relative;
+    display: block;
+    width: 200px;
+    float: left;
+    border-left: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+}
+
+.accordion ul:hover li {width: 50px;}
+.accordion ul li:hover {width: 900px;}
+.accordion li img {
+    display: block;
+}
+
+@keyframes BobbySnuggles {
+  0% {
+    opacity: 0;
+    transform: rotate(15deg) scale(0);
+  }
+  100% {
+    opacity: 1; 
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    background: pink; 
+  }
+}
+    </style>
+  </body>
+</html>

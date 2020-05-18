@@ -2,7 +2,7 @@ $primary-color: #444;
 $secondary-color: #df8bd3;
 $show-home-image: true;
 $home-image: url("../img/b4.jpg");
-$backgroun-opacity: 0.9;
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -22,7 +22,7 @@ $backgroun-opacity: 0.9;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: rgba($primary-color, $backgroun-opacity);
+        background: rgba($primary-color, $background-opacity);
       }
     }
   }
