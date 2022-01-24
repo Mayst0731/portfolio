@@ -149,15 +149,6 @@ main {
   background: url(../img/pro6.jpg);
   @include workPro;
 }
-// .work_pro7 {
-//   background: url(../img/pro7.jpg);
-//   @include workPro;
-// }
-// .work_pro8 {
-//   background: url(../img/pro8.jpg);
-//   @include workPro;
-// }
-
 
 .projects {
   display: grid;
@@ -233,6 +224,5 @@ main {
   color: set-text-color($primary-color);
   height: 60px;
 }
-
 
 @import "mobile";
