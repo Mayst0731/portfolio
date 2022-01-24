@@ -149,6 +149,10 @@ main {
   background: url(../img/pro6.jpg);
   @include workPro;
 }
+.work_pro7 {
+  background: url(../img/pro7.jpg);
+  @include workPro;
+}
 
 .projects {
   display: grid;
